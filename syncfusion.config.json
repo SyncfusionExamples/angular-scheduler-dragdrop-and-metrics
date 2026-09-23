@@ -1,0 +1,22 @@
+{
+  "framework": "angular",
+  "type": "typescript",
+  "theme": "material3",
+  "styling": "css",
+  "template": "scheduler",
+  "buildTool": null,
+  "components": [
+    "scheduler"
+  ],
+  "mcp": {
+    "integrated": false,
+    "editors": []
+  },
+  "skills": {
+    "installed": false
+  },
+  "version": "1.0.1",
+  "createdAt": "2026-09-23T08:34:07.848Z",
+  "updatedAt": "2026-09-23T08:34:07.852Z",
+  "syncfusionVersion": "1.0.1"
+}

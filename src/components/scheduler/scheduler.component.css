@@ -1,0 +1,112 @@
+.button-container {
+  padding: 16px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.load-appointments-btn {
+  padding: 10px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.25);
+}
+
+.load-appointments-btn:hover:not(:disabled) {
+  background-color: #45a049;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.35);
+  transform: translateY(-1px);
+}
+
+.load-appointments-btn:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.load-time-info {
+  font-size: 12px;
+  color: #333;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border-left: 4px solid #4CAF50;
+  display: flex;
+  gap: 16px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.load-time-info strong {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.content-wrapper.grid-to-schedule .schedule-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 20px;
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.content-wrapper.grid-to-schedule .schedule-container .schedule-content,
+.content-wrapper.grid-to-schedule .schedule-container .grid-content {
+  height: 570px;
+}
+
+.content-wrapper.grid-to-schedule .schedule-container .grid-content {
+  margin-left: 10px;
+}
+
+.grid-schedule.e-schedule .e-timeline-view .e-date-header-wrap table col,
+.grid-schedule.e-schedule .e-timeline-view .e-content-wrap table col {
+  width: 100px;
+}
+
+.grid-to-schedule .e-drag-clone,
+.grid-to-schedule .e-schedule-event-clone {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drag-grid .e-vscroll {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrapper.grid-to-schedule .schedule-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper.grid-to-schedule .schedule-container .grid-content {
+    margin-top: 10px;
+  }
+
+  .drag-grid.e-grid {
+    width: 100% !important;
+  }
+
+  .drag-grid.e-grid .e-cloneproperties.e-draganddrop {
+    margin-top: 20px;
+  }
+
+  .content-wrapper.grid-to-schedule .schedule-container .schedule-content,
+  .content-wrapper.grid-to-schedule .schedule-container .grid-content {
+    height: 100% !important;
+  }
+}
+

@@ -82,10 +82,6 @@
   white-space: nowrap;
 }
 
-.drag-grid .e-vscroll {
-  display: none !important;
-}
-
 @media screen and (max-width: 1024px) {
   .content-wrapper.grid-to-schedule .schedule-container {
     display: flex;
@@ -97,7 +93,7 @@
   }
 
   .drag-grid.e-grid {
-    width: 100% !important;
+    width: 100%;
   }
 
   .drag-grid.e-grid .e-cloneproperties.e-draganddrop {
@@ -106,7 +102,7 @@
 
   .content-wrapper.grid-to-schedule .schedule-container .schedule-content,
   .content-wrapper.grid-to-schedule .schedule-container .grid-content {
-    height: 100% !important;
+    height: 100%;
   }
 }
 
